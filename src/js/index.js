@@ -46,7 +46,7 @@ const options = {
 
 const loadMorePhotos = async function (entries, observer) {
   entries.forEach(async entry => {
-    if (entry.isIntersecting) {
+    if (entry.isIntersecting && pixaby.hasMorePhotos()) {
       observer.unobserve(entry.target);
       pixaby.incrementPage();
 
@@ -180,4 +180,3 @@ function scrollPage() {
         behavior: 'smooth',
     });
 }
-

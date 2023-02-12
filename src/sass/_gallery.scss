@@ -20,10 +20,6 @@
     flex-basis: calc((100% - 60px) / 4);
     transition: transform 250ms linear;
 
-    &:hover,
-    &:focus {
-        transform: scale(1.05);
-    }
 
 }
 
@@ -105,14 +101,14 @@ button.circle {
     background-color: transparent;
 
 
-    &:hover>.bi {
+    &:hover>.heart {
         color: #cc3232;
         transform: scale(0.8);
     }
 
 }
 
-.bi {
+.heart {
     width: 1rem;
     color: #90bad5;
 
